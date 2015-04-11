@@ -1,1 +1,1 @@
-# webwallet.github.io
+# webwallet.org
