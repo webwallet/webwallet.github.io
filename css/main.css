@@ -13,6 +13,10 @@ body {
   background-repeat: repeat-x;
 }
 
+.jumbotron {
+    border: 1px solid #ccc;
+}
+
 .jumbotron, .container .jumbotron, .container-fluid .jumbotron {
     padding: 20px;
 }
@@ -37,12 +41,16 @@ body {
     padding-left: 0px;
     padding-right: 0px;
 }
-.api-console-form .wallet-address {
+.api-console-form .wallet-address, .api-console-form .api-domain {
     text-align: center;
+    font-size: 0.9em;
 }
 
 @media (max-width: 992px) {
-    #api-console-form div {
+    .api-console-form div {
         margin-bottom: 10px;
+    }
+    .api-console-form input {
+        font-size: 0.8em;
     }
 }
