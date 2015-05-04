@@ -23,7 +23,7 @@ body {
 .jumbotron .row {
     text-align: center;
 }
-.jumbotron button.btn-default {
+.api-console-form button.btn {
     width: 100%;
 }
 
@@ -44,6 +44,14 @@ body {
 .api-console-form .wallet-address, .api-console-form .api-domain {
     text-align: center;
     font-size: 0.9em;
+}
+.container .api-console-request, .container .api-console-response {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
