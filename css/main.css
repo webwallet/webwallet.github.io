@@ -52,7 +52,20 @@ body {
     min-height: 50px;
     border-radius: 6px;
     margin-bottom: 20px;
+    padding: 20px;
+
 }
+.container .api-console-request h4, .container .api-console-response h4 {
+    margin: 0px;
+    color: #555;
+}
+.container .api-console-request hr, .container .api-console-response hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 
 @media (max-width: 992px) {
     .api-console-form div {
