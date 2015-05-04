@@ -98,16 +98,32 @@
                 </div>
             </div>
             <section class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="api-console-request">
-                        <h4>REQUEST:</h4>
+                        <h3><span class="label label-default">REQUEST</span></h3>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default btn-active">Raw</button>
+                            <button type="button" class="btn btn-default">Fields</button>
+                        </div>
                         <hr>
+<pre>
+GET /{walletAddress}/balance HTTP/1.1
+Host: api.webwallet.org
+</pre>
                     </div>  
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7 container-fluid">
                     <div class="api-console-response">
-                        <h4>RESPONSE:</h4>
+                        <h3><span class="label label-default">RESPONSE</span></h3>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default btn-active">Raw</button>
+                            <button type="button" class="btn btn-default">Fields</button>
+                        </div>
                         <hr>
+<pre>
+{
+}
+</pre>
                     </div>
                 </div>
             </section>
