@@ -1,11 +1,13 @@
+var crypto = require('crypto-browserify'),
+    createHash = crypto.createHash,
+    createECDH = crypto.createECDH,
+    ripemd160 = require('ripemd160'),
+    base58check = require('bs58check'),
+    defaultPrefix = '87';
+
 function generateAddress(prefix) {
-    var crypto = require('crypto-browserify'),
-        createHash = crypto.createHash,
-        createECDH = crypto.createECDH,
-        ripemd160 = require('ripemd160'),
-        ecdh = createECDH('secp256k1'),
-        base58check = require('bs58check'),
-        publicPrefix = prefix || '87',
+    var ecdh = createECDH('secp256k1'),
+        publicPrefix = prefix || defaultPrefix,
         privatePrefix = ((Number('0x' + publicPrefix) + 128) % 256).toString(16);
         privatePrefix = (privatePrefix.length === 1) ? '0' + privatePrefix : privatePrefix;
 
