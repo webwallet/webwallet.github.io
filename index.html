@@ -83,7 +83,18 @@
                                     <span class="api-url-text">/</span>
                                 </span>
                                 <input type="text" class="form-control resource-url" aria-label="resource url" placeholder="insert an address or type an endpoint...">
-                                <span class="input-group-addon api-url-endpoints">+</span>
+                                <span class="input-group-addon api-url-endpoints">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">+</button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><span class="api-endpoint-selector">/address</span></li>
+                                            <li><span class="api-endpoint-selector">/balance</span></li>
+                                            <li><span class="api-endpoint-selector">/transactions</span></li>
+                                            <!-- <li class="divider"></li> -->
+                                            <!-- <li><span class="api-endpoint-selector">Separated link</span></li> -->
+                                        </ul>
+                                    </div>
+                                </span>
                             </div>
                         </div>
                         <div class="col-md-2">
