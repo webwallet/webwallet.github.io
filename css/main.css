@@ -28,8 +28,8 @@ body {
 }
 
 .api-console-form div {
-    padding-left: 10px;
-    padding-right: 10px;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
 }
 .api-console-form > div:first-child {
     margin-bottom: 0px;
@@ -41,9 +41,17 @@ body {
     padding-left: 0px;
     padding-right: 0px;
 }
-.api-console-form .wallet-address, .api-console-form .api-domain {
-    text-align: center;
+.api-console-form .resource-url, .api-console-form .api-domain {
+    /*text-align: center;*/
     font-size: 0.9em;
+}
+.api-console-form .api-url,
+.api-console-form .api-url-endpoints {
+    cursor: pointer;
+}
+.api-console-form .api-url-text {
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .api-console-request, .api-console-response {
@@ -104,6 +112,7 @@ body {
         font-size: 0.8em;
     }
 }
+
 
 @media (max-width: 768px) {
     
