@@ -1,8 +1,10 @@
 window.onload = function () {
-    var apiUrlTag = document.querySelector('.api-console-form .api-url'),
+    var apiConsoleForm = document.querySelector('.api-console-form'),
+        apiUrlTag = apiConsoleForm.querySelector('.api-console-form .api-url'),
         apiUrlToggler = apiUrlTag.querySelector('.api-url-toggler'),
         apiUrlText = apiUrlTag.querySelector('.api-url-text'),
-        urlInput = document.querySelector('.api-console-form .resource-url');
+        urlInput = apiConsoleForm.querySelector('.api-console-form .resource-url'),
+        resourceUrl = apiConsoleForm.querySelector('.resource-url');
 
     // apiUrlToggler.addEventListener('click', handleUrlTagToggle);
     apiUrlTag.addEventListener('click', function handleUrlTagToggle(event) {
@@ -10,7 +12,7 @@ window.onload = function () {
         apiUrlText.innerHTML = (apiUrlText.innerHTML === '/') ? apiUrlTag.attributes['name'].value : '/';
     });
 
-    var endpointSelectors = document.querySelectorAll('.api-console-form .api-endpoint-selector');
+    var endpointSelectors = apiConsoleForm.querySelectorAll('.api-console-form .api-endpoint-selector');
     // endpointSelector.forEach(function (selector) {
     for (var i = 0, length = endpointSelectors.length; i < length; i++) {
         (function (selector) {
@@ -21,6 +23,7 @@ window.onload = function () {
                 } else {
                     urlInput.value += selector.innerHTML;
                 }
+                resourceUrl.focus();
             });
         })(endpointSelectors[i]);
     }

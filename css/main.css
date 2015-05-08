@@ -12,6 +12,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
 }
+.navbar-header .navbar-brand {
+    color: #ddd;
+}
 
 .jumbotron {
     border: 1px solid #ccc;
@@ -47,6 +50,10 @@ body {
 .api-console-form .api-url-text {
     padding-left: 3px;
     padding-right: 3px;
+}
+.api-console-form .resource-url {
+    color: #333;
+    font-family: monospace;
 }
 .api-console-form .api-url-endpoints {
     padding: 0px;
