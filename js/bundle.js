@@ -13042,7 +13042,7 @@ function generateAddress(prefix) {
 
 window.onload = function () {
     var walletAddress = generateAddress();
-    document.querySelector('.api-console-form .wallet-address').value = walletAddress.address;
+    // document.querySelector('.api-console-form .wallet-address').value = walletAddress.address;
 }
 
 }).call(this,require("buffer").Buffer)
