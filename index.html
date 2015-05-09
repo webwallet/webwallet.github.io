@@ -62,87 +62,85 @@
         </nav>
         
         <section class="container" role="main">
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <div class="row">
-                    <form class="api-console-form">
-                        <div class="col-md-2">
-                            <div class="col-md-12">
-                                <select class="form-control httpMethod">
-                                    <option value="GET">GET</option>
-                                    <option value="POST">POST</option>
-                                    <option value="PUT">PUT</option>
-                                    <option value="DELETE">DELETE</option>
-                                </select>
+            <div class="panel panel-default api-console-panel">
+                <div class="panel-heading">
+                    <div class="row">
+                        <form class="api-console-form">
+                            <div class="col-md-2">
+                                <div class="col-md-12">
+                                    <select class="form-control httpMethod">
+                                        <option value="GET">GET</option>
+                                        <option value="POST">POST</option>
+                                        <option value="PUT">PUT</option>
+                                        <option value="DELETE">DELETE</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="input-group">
-                                <span class="input-group-addon api-url" name="https://api.webwallet.org/">
-                                    <!-- <span class="api-url-toggler">+</span> -->
-                                    <span class="api-url-text">/</span>
-                                </span>
-                                <input type="text" class="form-control resource-url" aria-label="resource url" placeholder="insert an address or type an endpoint...">
-                                <span class="input-group-addon api-url-endpoints">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">+</button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><span class="api-endpoint-selector">/address</span></li>
-                                            <li><span class="api-endpoint-selector">/balance</span></li>
-                                            <li><span class="api-endpoint-selector">/transactions</span></li>
-                                            <!-- <li class="divider"></li> -->
-                                            <!-- <li><span class="api-endpoint-selector">Separated link</span></li> -->
-                                        </ul>
-                                    </div>
-                                </span>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon api-url" name="https://api.webwallet.org/">
+                                        <!-- <span class="api-url-toggler">+</span> -->
+                                        <span class="api-url-text">/</span>
+                                    </span>
+                                    <input type="text" class="form-control resource-url" aria-label="resource url" placeholder="insert an address or type an endpoint...">
+                                    <span class="input-group-addon api-url-endpoints">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">+</button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><span class="api-endpoint-selector">/address</span></li>
+                                                <li><span class="api-endpoint-selector">/balance</span></li>
+                                                <li><span class="api-endpoint-selector">/transactions</span></li>
+                                                <!-- <li class="divider"></li> -->
+                                                <!-- <li><span class="api-endpoint-selector">Separated link</span></li> -->
+                                            </ul>
+                                        </div>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <!-- <div class="col-md-8">
-                                <select class="form-control api-endpoint-select">
-                                    <option value=""></option>
-                                    <option value="balance" selected>/balance</option>
-                                    <option value="transactions">/transactions</option>
-                                </select>
-                            </div> -->
-                            <div class="col-md-12 last-button">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                            <div class="col-md-2">
+                                <!-- <div class="col-md-8">
+                                    <select class="form-control api-endpoint-select">
+                                        <option value=""></option>
+                                        <option value="balance" selected>/balance</option>
+                                        <option value="transactions">/transactions</option>
+                                    </select>
+                                </div> -->
+                                <div class="col-md-12 last-button">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <section class="row">
-                <!-- <div class="col-md-4">
-                    <div class="api-console-request">
-                        <h3><span class="label label-default">REQUEST</span></h3>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default btn-active">Raw</button>
-                            <button type="button" class="btn btn-default">Fields</button>
+                <div class="panel-body">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="btn btn-default navbar-btn reqres-btn">REQUEST</button>
+                                <button type="button" class="btn btn-default navbar-btn reqres-btn btn-primary">RESPONSE</button>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <div class="btn-group " role="group" aria-label="...">
+                                        <button type="button" class="btn btn-default">Raw</button>
+                                        <button type="button" class="btn btn-primary">Interactive</button>
+                                        <button type="button" class="btn btn-default">Fields</button>
+                                    </div>
+                                </li>    
+                            </ul>
                         </div>
-                        <hr>
-<pre>
-GET /{walletAddress}/balance HTTP/1.1
-Host: api.webwallet.org
-</pre>
-                    </div>  
-                </div> -->
-                <div class="col-md-12 container-fluid">
-                    <div class="api-console-response">
-                        <h3><span class="label label-default">REQUEST</span></h3>
-                        <h3><span class="label label-primary">RESPONSE</span></h3>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default btn-active">Raw</button>
-                            <button type="button" class="btn btn-default">Fields</button>
-                        </div>
-                        <hr>
+                    </nav>
+                        
+                    <div class="well">
 <pre>
 {
 }
 </pre>
                     </div>
                 </div>
-            </section>
+
+                <!-- <div class="panel-footer"></div> -->
+            </div>
         </section>
 
         <!--[if lt IE 8]>
