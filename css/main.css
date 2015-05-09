@@ -97,15 +97,18 @@ nav .container {
     margin-right: 10px;
     margin-bottom: 20px;
     height: 32px;
-    /*position: relative;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);*/
 }
 .api-console-panel pre {
     font-size: 0.9em;
     margin: 0px;
     border:none;
+}
+.api-console-panel .input-group .dropdown-menu {
+    /*position: relative;*/ 
+    margin-left: 35px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(-100%);
 }
 .well {
     margin-bottom: 0px;
