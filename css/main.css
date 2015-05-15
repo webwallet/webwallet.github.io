@@ -110,9 +110,15 @@ nav .container {
     -ms-transform: translateX(100%);
     transform: translateX(-100%);
 }
-.well {
+.api-console-panel .well {
     margin-bottom: 0px;
     padding: 0px;
+}
+.api-console-panel .alert {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 @media (max-width: 992px) {

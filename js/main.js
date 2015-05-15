@@ -27,4 +27,17 @@ window.onload = function () {
             });
         })(endpointSelectors[i]);
     }
+
+    var preLinks = document.querySelectorAll('.pre-link');
+    for (var i = 0, length = preLinks.length; i < length; i++) {
+        (function (preLink) {
+            preLink.addEventListener('click', function (event) {
+                console.log(preLink);
+            });
+        })(preLinks[i]);
+    }
 };
+
+/*
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+*/
