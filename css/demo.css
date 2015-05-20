@@ -1,0 +1,81 @@
+.wallet-widget {
+    width: 400px;
+    margin: 0px auto 50px auto;
+}
+.wallet-widget .headerCurrency {
+    float: right;   
+}
+.wallet-widget .panel-body {
+    padding: 0px;
+}
+.wallet-widget .progress {
+    border-radius: 0px;
+    width: 100%;
+    height: 15px;
+    margin-bottom: 0px;
+    float: left;
+    background-color: #fff;
+    background-image: none;
+}
+
+.wallet-widget .progress .progress-bar {
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+    
+.wallet-widget .progress .progress-bar-positive {
+    background-color: #86e01e;
+}
+.wallet-widget .progress .progress-bar-negative {
+    background-color: #F34E61;
+    float: right;
+}
+
+.wallet-widget .btn-group button {
+    border-color: #ddd;
+    box-shadow: none;
+    /*-webkit-box-shadow: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;*/
+}
+
+.wallet-widget .list-group .list-group-item {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.wallet-widget .input-group {
+    margin: 0px;
+}
+.wallet-widget .list-group {
+    margin-bottom: 15px;
+}
+.wallet-widget .input-group span.input-group-addon {
+    min-width: 100px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-left: none;
+}
+.wallet-widget .input-group span.input-group-addon, .wallet-widget .input-group input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+.wallet-widget .input-group input {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-right: none;
+    font-size: 0.9em;
+}
+.form-control[disabled], fieldset[disabled] .form-control {
+    background-color: transparent;
+};
